@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #001f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", serif;
+  height: 100vh;
+}
+#fullWrapper {
+  width: 450px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.declare {
+  position: relative;
+}
+.declare span {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.declare span i {
+  font-size: 40px;
+  color: #ffffff;
+}
+#winner h2 {
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  color: #f5c600;
+}
+#winner p {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgb(131, 129, 129);
+  padding-block: 20px;
+  margin-inline: 20px;
+}
+#playerOne,
+#playerTwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: 0 0 10px #3a6d8c;
+  /* backdrop-filter: blur(5px); */
+  padding: 10px;
+  font-family: "Poppins", serif;
+  backface-visibility: hidden;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+#playerTwo {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+#playerOne h2,
+#playerTwo h2 {
+  color: #ead8b1;
+  font-size: 25px;
+  text-align: center;
+  background: #1e3e62;
+  padding-block: 5px;
+}
+#inputWrapper {
+  margin-top: 10px;
+  text-align: center;
+}
+#playerOne input,
+#playerTwo input {
+  padding: 10px 20px;
+  width: 300px;
+  background: transparent;
+  border: none;
+  border: 1px solid #ead8b1;
+  border-radius: 5px;
+  outline: none;
+  color: #ead8b1;
+}
+
+#playerOne input::placeholder,
+#playerTwo input::placeholder {
+  font-size: 18px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+#errorMsg,
+#errorMsgTwo {
+  height: 30px;
+  color: red;
+  font-size: 14px;
+}
+#playerOne h2 i,
+#playerTwo h2 i {
+  color: #ead8b1;
+  font-size: 30px;
+  margin-right: 20px;
+}
+#btn,
+#btnTwo {
+  outline: none;
+  padding: 10px 30px;
+
+  font-family: "Poppins", serif;
+  background: #3a6d8c;
+  border: none;
+  color: #ead8b1;
+  font-size: 20px;
+}
+#gameName {
+  color: #ead8b1;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 40px;
+}
+#winner {
+  width: 100%;
+  height: 100%;
+  background-color: #4c002d;
+  display: none;
+  box-shadow: 0 0 10px #ead8b1;
+}
+@media (min-width:300px) and (max-width:575px){
+  .declare span i{
+    font-size: 30px;
+
+  }
+  .declare #result{
+    font-size: 30px;
+    
+  }
+  #winner h2{
+    font-size: 30px;
+}
+#playerOne input,
+#playerTwo input {
+ 
+  width: auto;
+}
+#fullWrapper {
+  width: 100%;
+  height: 350px;
+}
+body{
+  height: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+#playerOne, #playerTwo {
+  padding: 0;
+
+}
+#gameName {
+  color: #ead8b1;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 30px;
+}
+#playerOne h2, #playerTwo h2 {
+  color: #ead8b1;
+  font-size: 20px;
+  text-align: center;
+  background: none;
+  padding-block: 0;
+}
+#playerOne h2 i, #playerTwo h2 i {
+  color: #ead8b1;
+  font-size: 20px;
+  margin-right: 10px;
+}
+}
