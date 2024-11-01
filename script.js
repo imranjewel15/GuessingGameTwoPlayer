@@ -12,9 +12,6 @@ let playerOne = document.querySelector("#playerOne");
 let snowFall = document.querySelector("#snowFall");
 
 btn.addEventListener("click", () => {
-  // if(!inputOne.value){
-  //     errorMsg.innerHTML ="You do not enter any number.Please Input a number "
-  // }
   if (!inputOne.value || inputOne.value > 9 || inputOne.value < 0) {
     errorMsg.innerHTML = "Invalid Number.Please Input Number 0 to 9";
   } else {
@@ -24,9 +21,6 @@ btn.addEventListener("click", () => {
 });
 
 btnTwo.addEventListener("click", () => {
-  // if(!inputTwo.value){
-  //     errorMsgTwo.innerHTML ="You do not enter any number.Please Input a number "
-  // }
   if (!inputTwo.value || inputTwo.value > 9 || inputTwo.value < 0) {
     errorMsgTwo.innerHTML = "Invalid Number.Please Input Number 0 to 9";
   } else {
@@ -41,3 +35,10 @@ btnTwo.addEventListener("click", () => {
     }
   }
 });
+
+// if(!inputOne.value){
+//     errorMsg.innerHTML ="You do not enter any number.Please Input a number "
+// }
+// if(!inputTwo.value){
+//     errorMsgTwo.innerHTML ="You do not enter any number.Please Input a number "
+// }
